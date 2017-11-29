@@ -3,3 +3,35 @@
 sudo su -l stack \
 && cd /opt/stack/logs\
 && cat stack.sh.log
+
+# You will see something like this on your screen from postInstallLog
+# copy the credentials to login to Horizon
+# =========================
+# DevStack Component Timing
+#  (times are in seconds)
+# =========================
+# run_process          237
+# test_with_retry       15
+# apt-get-update        10
+# pip_install          1059
+# osc                  797
+# wait_for_service     129
+# git_timed            262
+# dbsync               659
+# apt-get              1488
+# -------------------------
+# Unaccounted time     2942
+# =========================
+# Total runtime        7598
+#
+#
+#
+# This is your host IP address: 192.168.122.189
+# This is your host IPv6 address: ::1
+# Horizon is now available at http://192.168.122.189/dashboard
+# Keystone is serving at http://192.168.122.189/identity/
+# The default users are: admin and demo
+# The password: ubuntu
+#
+# DevStack Version: queens
+# OS Version: Ubuntu 16.04 xenial
