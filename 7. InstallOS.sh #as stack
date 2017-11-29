@@ -1,0 +1,4 @@
+#This script initiates the openstack installation using devstack
+#! /bin/bash
+cd /devstack \
+&& nohup ./stack.sh &
