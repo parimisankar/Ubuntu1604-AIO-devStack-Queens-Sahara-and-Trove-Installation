@@ -1,4 +1,6 @@
 #This script initiates the openstack installation using devstack
+#Nohup is helpful when you have to execute a shell-script or command that take a long time to finish.
+#Nohup allows you to execute a script, exit the shell and continue with your other work instead of waiting for the command to complete.
 #! /bin/bash
 cd /devstack \
 && nohup ./stack.sh &
