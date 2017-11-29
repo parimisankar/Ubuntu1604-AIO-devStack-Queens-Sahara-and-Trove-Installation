@@ -1,0 +1,14 @@
+#! /bin/bash
+NAME=$1
+sudo virt-install \
+--name=$NAME \
+--disk path=/var/lib/libvirt/images/$NAME.image,size=500 \
+--ram=14096 \
+--vcpus=7 \
+--location='http://jp.archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/' \
+--os-type=linux \
+--os-variant=ubuntu16.04 \
+--graphics=vnc \
+--virt-type=kvm \
+--console pty,target_type=serial \
+--network bridge:virbr0
