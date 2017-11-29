@@ -1,4 +1,0 @@
-#! /bin/bash
-$ arp -an | grep 'virbr0'
-Login to Guest VM using the IP
-ssh -X $USERNAME@192.168.122.XXX

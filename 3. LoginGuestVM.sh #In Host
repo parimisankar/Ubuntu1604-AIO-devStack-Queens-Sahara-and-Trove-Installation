@@ -1,0 +1,3 @@
+#! /bin/bash
+ip=$(arp -an | grep 'virbr0' | awk {'print $2'} | sed s/\(/''/ | sed s/\)/''/)
+&& ssh -X $USER@$IP
