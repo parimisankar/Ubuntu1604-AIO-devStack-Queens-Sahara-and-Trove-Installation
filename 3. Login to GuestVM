@@ -1,0 +1,4 @@
+# Get the ip of the Guest
+$ arp -an #Look for IP with virbr0
+# Login using ssh
+# ssh -X user@192.168.122.XXX
