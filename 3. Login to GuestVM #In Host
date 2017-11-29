@@ -1,4 +1,4 @@
-# Get the ip of the Guest
-$ arp -an #Look for IP with virbr0
-# Login using ssh
-# ssh -X user@192.168.122.XXX
+#! /bin/bash
+$ arp -an | grep 'virbr0'
+Login to Guest VM using the IP
+ssh -X $USERNAME@192.168.122.XXX
