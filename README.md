@@ -1,2 +1,1 @@
-# Deploy-OpenStack-with-Sahara-and-launch-clusters
-Vanilla Clusters on devStack using Sahara
+# Deploy-OpenStack-with-Sahara-and-Trove using devStack on a single VM
