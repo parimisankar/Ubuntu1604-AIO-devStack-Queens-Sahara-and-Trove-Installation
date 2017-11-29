@@ -1,0 +1,34 @@
+Press 'I'
+Add/Edit this into local.conf file
+##########################################################################
+[[local|localrc]]
+ADMIN_PASSWORD=ubuntu
+MYSQL_PASSWORD=$ADMIN_PASSWORD
+RABBIT_PASSWORD=$ADMIN_PASSWORD
+SERVICE_PASSWORD=$ADMIN_PASSWORD
+#HOST_IP=192.168.122.XXX
+ 
+# Enable logging
+SCREEN_LOGDIR=$DEST/logs/screen
+ 
+### Enable PLUGINS
+# Enable Sahara (Data Processing)
+enable_plugin sahara git://git.openstack.org/openstack/sahara
+ 
+# Enable Heat (Orchestration)
+enable_plugin heat git://git.openstack.org/openstack/heat
+ 
+# Enable Sahara Dashboard
+enable_plugin sahara-dashboard git://git.openstack.org/openstack/sahara-dashboard
+ 
+# Enable Trove (Database)
+enable_plugin trove git://git.openstack.org/openstack/trove
+ 
+# Enable Trove Dashboard
+enable_plugin trove-dashboard git://git.openstack.org/openstack/trove-dashboard
+ 
+# Enable Manila
+enable_plugin manila https://github.com/openstack/manila
+##########################################################################
+
+Exit vim by typing 'ESC' and then type ':wq'
