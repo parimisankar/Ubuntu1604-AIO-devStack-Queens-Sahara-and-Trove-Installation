@@ -1,4 +1,4 @@
-#This script requires a variable IMAGE (Name of the image and domain)
+#This script requires you to pass a variable IMAGE (Name of the image and domain)
 # Upon execution, will delete any existing images, destroys and undefines the domains with same image name.
 #! /bin/bash
 IMAGE=$1
