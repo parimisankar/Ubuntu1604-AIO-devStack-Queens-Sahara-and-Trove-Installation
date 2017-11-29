@@ -1,4 +1,0 @@
-# Logout of the guest
-# From host, type
-firefox &
-# Use credentials from post install log
