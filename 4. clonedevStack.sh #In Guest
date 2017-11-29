@@ -1,3 +1,4 @@
+#No arguments needed for this script
 # This script will install vim, git and ntp, update and upgrade packages, then clones devstack in /devstack folder, creates a user "stack" with sudo privileges and logs in as user "stack".
 #! /bin/bash
 sudo apt-get install vim git ntp \
