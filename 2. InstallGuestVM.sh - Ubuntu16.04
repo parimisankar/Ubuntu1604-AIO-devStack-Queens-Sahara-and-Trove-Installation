@@ -1,3 +1,5 @@
+#This script requires a NAME variable
+#This script installs Ubuntu16.04 and creates an image of size 500GB
 #! /bin/bash
 NAME=$1
 sudo virt-install \
