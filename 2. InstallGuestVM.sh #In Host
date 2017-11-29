@@ -1,4 +1,5 @@
 #This script requires a NAME variable
+#This script opens a GUI 'virtviewer' finish with your inputs on GUI to complete installation and close virtviewer.
 #This script installs Ubuntu16.04 and creates an image of size 500GB
 #! /bin/bash
 NAME=$1
