@@ -1,3 +1,4 @@
+#Pass username as an argument to this script
 #! /bin/bash
-ip=$(arp -an | grep 'virbr0' | awk {'print $2'} | sed s/\(/''/ | sed s/\)/''/)
-&& ssh -X $USER@$IP
+#ssh -X ubuntu@192.168.122.$1
+ssh -X $1@$(arp -an | grep 'virbr0' | awk {'print $2'} | sed s/\(/''/ | sed s/\)/''/) \
