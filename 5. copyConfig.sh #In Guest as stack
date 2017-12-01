@@ -1,5 +1,5 @@
 #! /bin/bash
-sudo su -l stack \
-&& cd /devstack \
+# Make sure you are loggedin as stack by typing sudo su -l stack
+cd /devstack \
 && cp /devstack/samples/local.conf /devstack/local.conf \
 && sudo vi local.conf
