@@ -1,7 +1,7 @@
 # To look at post install logs of openStack
 #! /bin/bash
-sudo su -l stack \
-&& cd /opt/stack/logs\
+# Change user to stack - sudo su -l stack 
+cd /opt/stack/logs\
 && cat stack.sh.log
 
 # You will see something like this on your screen from postInstallLog
